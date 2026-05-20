@@ -1,0 +1,42 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { Helmet } from "react-helmet-async";
+
+interface SEOProps {
+  title: string;
+  description: string;
+  keywords?: string;
+  type?: string;
+  name?: string;
+}
+
+export default function SEO({ title, description, keywords, type = "website", name = "Imperial Document Services" }: SEOProps) {
+  const fullTitle = `${title} | ${name}`;
+  
+  return (
+    <Helmet>
+      {/* Standard metadata tags */}
+      <title>{fullTitle}</title>
+      <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
+      
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content={type} />
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content={name} />
+      <meta property="og:url" content={window.location.href} />
+      
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      
+      {/* Canonicals */}
+      <link rel="canonical" href={window.location.href} />
+    </Helmet>
+  );
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Imperial Document Services",
+  "description": "Court-ready litigation document support for attorneys and legal teams specializing in motion formatting, pleadings, and exhibit preparation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

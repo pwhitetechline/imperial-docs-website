@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-legal-navy: #0A192F;
+  --color-legal-charcoal: #1A1A1A;
+  --color-legal-green: #1B3022;
+  --color-legal-offwhite: #FDFCFB;
+  --color-legal-muted: #F5F2ED;
+  --color-legal-border: #E5E1DA;
+}
+
+@layer base {
+  body {
+    @apply bg-legal-offwhite text-legal-charcoal font-sans antialiased;
+  }
+  h1, h2, h3, h4, .font-serif {
+    @apply font-serif;
+    font-variant-numeric: lining-nums;
+  }
+}
+
+.legal-accent-border {
+  border-left: 4px solid var(--color-legal-navy);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-legal-border;
+}
+
+.section-padding {
+  @apply py-20 px-6 max-w-7xl mx-auto;
+}
