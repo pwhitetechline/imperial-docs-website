@@ -20,12 +20,14 @@ import BlogPost_FilingChecklist from "./pages/BlogPost_FilingChecklist";
 import BlogPost_Exhibits from "./pages/BlogPost_Exhibits";
 import BlogPost_TOA from "./pages/BlogPost_TOA";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export default function App() {
   return (
     <HelmetProvider>
       <Router>
         <ScrollToTop />
+        <GoogleAnalytics />
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">

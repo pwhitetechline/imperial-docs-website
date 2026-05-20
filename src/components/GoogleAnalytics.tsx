@@ -1,0 +1,29 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+    dataLayer?: any[];
+  }
+}
+
+export default function GoogleAnalytics() {
+  const location = useLocation();
+  const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || "G-0TZH0K513L";
+
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag("config", GA_ID, {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location, GA_ID]);
+
+  return null;
+}
