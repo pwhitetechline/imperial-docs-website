@@ -19,6 +19,7 @@ import BlogPost_CourtReady from "./pages/BlogPost_CourtReady";
 import BlogPost_FilingChecklist from "./pages/BlogPost_FilingChecklist";
 import BlogPost_Exhibits from "./pages/BlogPost_Exhibits";
 import BlogPost_TOA from "./pages/BlogPost_TOA";
+import BlogPost_EFilingGuide from "./pages/BlogPost_EFilingGuide";
 import ScrollToTop from "./components/ScrollToTop";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
@@ -44,6 +45,7 @@ export default function App() {
               <Route path="/blog/filing-prep-checklist-for-litigation-teams" element={<BlogPost_FilingChecklist />} />
               <Route path="/blog/why-exhibit-organization-matters" element={<BlogPost_Exhibits />} />
               <Route path="/blog/toc-toa-cleanup-basics" element={<BlogPost_TOA />} />
+              <Route path="/blog/paralegal-efiling-guide" element={<BlogPost_EFilingGuide />} />
             </Routes>
           </main>
           <Footer />

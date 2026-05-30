@@ -12,6 +12,14 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 export default function Blog() {
   const posts = [
     {
+      title: "Mastering the Digital Docket: The Ultimate E-Filing Guide for Paralegals",
+      excerpt: "Navigating e-filing requirements can be complex. To help, we've created a straightforward guide covering essential technical, formatting, and procedural standards.",
+      category: "Guide",
+      date: "May 30, 2026",
+      author: "Legal Ops Team",
+      slug: "/blog/paralegal-efiling-guide"
+    },
+    {
       title: "Common Formatting Issues That Delay Filings",
       excerpt: "Technical errors in document formatting can lead to court rejections. Learn how to avoid these common pitfalls.",
       category: "Process",
