@@ -112,7 +112,7 @@ export default function BlogPost_EFilingGuide() {
       <div className="bg-legal-navy py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="/blog/efiling-guide.jpg" 
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2670" 
             alt="Background" 
             className="w-full h-full object-cover blur-sm"
           />
@@ -155,7 +155,7 @@ export default function BlogPost_EFilingGuide() {
           className="rounded-xl overflow-hidden shadow-2xl border-4 border-white"
         >
           <img 
-            src="/blog/efiling-guide.jpg" 
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2670" 
             alt="Digital Legal Workflow" 
             className="w-full h-[500px] object-cover"
           />
