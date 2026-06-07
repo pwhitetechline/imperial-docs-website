@@ -121,7 +121,7 @@ export default function Home() {
       {/* Who I Support Section */}
       <Section variant="muted" id="who-i-support">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-legal-navy mb-4">Precision Support for Dynamic Practices</h2>
+          <h2 className="text-4xl font-bold text-legal-navy mb-4">Who We Support</h2>
           <div className="w-24 h-1 bg-legal-navy mx-auto" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
